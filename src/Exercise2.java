@@ -4,6 +4,7 @@ import java.util.Map;
 import java.util.Set;
 
 public class Exercise2 {
+    // [Thực hành] Phân biệt giữa HashMap và HashSet
     public static void main(String[] args) {
         Student student1 = new Student("Nam",20, "HN");
         Student student2 = new Student("Hung",21, "HP");
