@@ -52,10 +52,22 @@ public class BinarySearchTree<E extends Comparable<E>> extends AbstractTree<E> {
         inorder(root);
     }
 
+    @Override
+    public void postorder() {
+        postorder(root);
+    }
+
     protected void inorder(TreeNode<E> root) {
         if (root == null) return;
         inorder(root.left);
         System.out.println(root.element + " ");
         inorder(root.right);
+    }
+
+    protected void postorder(TreeNode<E> root) {
+        if (root == null) return;
+        inorder(root.left);
+        inorder(root.right);
+        System.out.println(root.element + " ");
     }
 }
